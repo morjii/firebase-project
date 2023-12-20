@@ -4,12 +4,10 @@ function HomePage() {
     return (
         <div style={styles.container}>
             <h1 style={styles.heading}>Firebase Project</h1>
-            <button style={styles.button} onClick={handleLogin}>Se connecter à Google</button>
+            <button style={styles.button}>Se connecter à Google</button>
         </div>
     );
 }
-
-
 
 
 const styles = {
