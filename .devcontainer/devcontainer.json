@@ -1,0 +1,10 @@
+{
+    "name": "Firebase",
+    "dockerComposeFile": [
+      "../docker-compose.dev.yml"
+    ],
+    // Le service dans docker-compose.dev.yml auquel on va attacher VSCode
+    "service": "vscode_firebase",
+    "workspaceFolder": "/home/dev",
+    "forwardPorts": [ 3000 ]
+  }

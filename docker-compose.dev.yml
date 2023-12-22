@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  vscode_firebase:
+    build: 
+      context: ./
+      dockerfile: ./docker/Dockerfile.dev
+    command: /bin/bash -c "while sleep 1000; do :; done"
+    working_dir: /home/dev
+    volumes:
+      - ./:/home/dev:cached
+      

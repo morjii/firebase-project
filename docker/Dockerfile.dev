@@ -1,0 +1,21 @@
+FROM node:18
+
+# Copie
+COPY ./docker/sources.list /etc/apt/sources.list
+
+
+# Installation des dépendances         
+# RUN npm install 
+# RUN npm install -g typescript
+# RUN npm install -g ts-node
+
+# Fixer le fuseau horaire
+ENV TZ Europe/Paris
+
+# L'interprète par défaut
+ENV SHELL /bin/bash
+
+# Le repertoire maison par défaut
+WORKDIR /home/dev
+
+RUN /bin/bash
